@@ -18,7 +18,7 @@ struct LoginView: View {
                 // Refined Blue Banner
                 ZStack {
                     RoundedRectangle(cornerRadius: 0)
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(Color.blue.opacity(0.65))
                         .frame(height: 200) // Adjusted height for a more balanced look
                         .edgesIgnoringSafeArea(.top)
 
@@ -46,7 +46,7 @@ struct LoginView: View {
                             .frame(minWidth: 0, maxWidth: .infinity)
                             .padding()
                             .foregroundColor(Color.white)
-                            .background(Color.blue)
+                            .background(Color.blue.opacity(0.65))
                             .cornerRadius(10)
                             .font(.system(size: 18, weight: .bold))
                     }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1F3AC3712AFEA94600613EA3 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3AC3702AFEA94600613EA3 /* AuthenticationService.swift */; };
-		1F3AC3732AFEAD9F00613EA3 /* AppDeligate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3AC3722AFEAD9F00613EA3 /* AppDeligate.swift */; };
 		1F3AC3752AFEAED400613EA3 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1F3AC3742AFEAED400613EA3 /* FirebaseAnalytics */; };
 		1F3AC3772AFEAED400613EA3 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 1F3AC3762AFEAED400613EA3 /* FirebaseAnalyticsOnDeviceConversion */; };
 		1F3AC3792AFEAED400613EA3 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F3AC3782AFEAED400613EA3 /* FirebaseAnalyticsSwift */; };
@@ -71,7 +70,6 @@
 
 /* Begin PBXFileReference section */
 		1F3AC3702AFEA94600613EA3 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
-		1F3AC3722AFEAD9F00613EA3 /* AppDeligate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDeligate.swift; sourceTree = "<group>"; };
 		1FDE2F112AFC5CEA0075A2C1 /* Session.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Session.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDE2F142AFC5CEA0075A2C1 /* SessionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionApp.swift; sourceTree = "<group>"; };
 		1FDE2F162AFC5CEA0075A2C1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -225,7 +223,6 @@
 				1FDE2F142AFC5CEA0075A2C1 /* SessionApp.swift */,
 				1FDE2F312AFC69090075A2C1 /* GoogleService-Info.plist */,
 				1F3AC3702AFEA94600613EA3 /* AuthenticationService.swift */,
-				1F3AC3722AFEAD9F00613EA3 /* AppDeligate.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -355,7 +352,6 @@
 				1FDE2F4C2AFC6BF00075A2C1 /* MeditationViewViewModel.swift in Sources */,
 				1FDE2F4E2AFC6C010075A2C1 /* JournalViewViewModel.swift in Sources */,
 				1FDE2F402AFC6B600075A2C1 /* RegisterView.swift in Sources */,
-				1F3AC3732AFEAD9F00613EA3 /* AppDeligate.swift in Sources */,
 				1FDE2F172AFC5CEA0075A2C1 /* MainView.swift in Sources */,
 				1FDE2F382AFC6B180075A2C1 /* ProfileView.swift in Sources */,
 				1FDE2F442AFC6B820075A2C1 /* HistoryView.swift in Sources */,
