@@ -6,28 +6,38 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 class AuthenticationService {
-    // Singleton instance, if you want to use a single instance throughout the app
     static let shared = AuthenticationService()
-
-    private init() {} // Private initializer for singleton
 
     // Register a new user
     func register(email: String, password: String, completion: @escaping (Result<User, Error>) -> Void) {
-        // Implement the registration logic here
-        // This could involve sending a request to your backend or Firebase
-        // On success, return a User object
-        // On failure, return an error
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            if let firebaseUser = authResult?.user {
+                let user = User(id: firebaseUser.uid, email: firebaseUser.email ?? "")
+                completion(.success(user))
+            }
+        }
     }
 
     // Log in an existing user
     func login(email: String, password: String, completion: @escaping (Result<User, Error>) -> Void) {
-        // Implement the login logic here
-        // This could involve sending a request to your backend or Firebase
-        // On success, return a User object
-        // On failure, return an error
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            if let firebaseUser = authResult?.user {
+                let user = User(id: firebaseUser.uid, email: firebaseUser.email ?? "")
+                completion(.success(user))
+            }
+        }
     }
 
-    // Add other authentication-related methods as needed
+    // Add other methods as needed (e.g., password reset, log out)
 }
