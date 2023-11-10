@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F3AC3712AFEA94600613EA3 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3AC3702AFEA94600613EA3 /* AuthenticationService.swift */; };
 		1FDE2F152AFC5CEA0075A2C1 /* SessionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDE2F142AFC5CEA0075A2C1 /* SessionApp.swift */; };
 		1FDE2F172AFC5CEA0075A2C1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDE2F162AFC5CEA0075A2C1 /* MainView.swift */; };
 		1FDE2F192AFC5CEB0075A2C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDE2F182AFC5CEB0075A2C1 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F3AC3702AFEA94600613EA3 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		1FDE2F112AFC5CEA0075A2C1 /* Session.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Session.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDE2F142AFC5CEA0075A2C1 /* SessionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionApp.swift; sourceTree = "<group>"; };
 		1FDE2F162AFC5CEA0075A2C1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				1FDE2F142AFC5CEA0075A2C1 /* SessionApp.swift */,
 				1FDE2F312AFC69090075A2C1 /* GoogleService-Info.plist */,
+				1F3AC3702AFEA94600613EA3 /* AuthenticationService.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				1FDE2F172AFC5CEA0075A2C1 /* MainView.swift in Sources */,
 				1FDE2F382AFC6B180075A2C1 /* ProfileView.swift in Sources */,
 				1FDE2F442AFC6B820075A2C1 /* HistoryView.swift in Sources */,
+				1F3AC3712AFEA94600613EA3 /* AuthenticationService.swift in Sources */,
 				1FDE2F462AFC6BB30075A2C1 /* User.swift in Sources */,
 				1FDE2F542AFC6C4A0075A2C1 /* SettingsViewViewModel.swift in Sources */,
 				1FDE2F152AFC5CEA0075A2C1 /* SessionApp.swift in Sources */,
