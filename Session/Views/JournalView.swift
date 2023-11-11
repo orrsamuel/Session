@@ -8,40 +8,37 @@
 import SwiftUI
 
 struct JournalView: View {
-    @State private var journalText: String = ""
-    let meditationTime: Int
-    let onSave: (JournalEntry) -> Void
+    @StateObject var viewModel: JournalViewViewModel
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         VStack {
-            TextEditor(text: $journalText)
-                .border(Color.gray, width: 1) // Adds a border to the text editor
+            TextEditor(text: $viewModel.journalText)
+                .padding()
+                .border(Color.gray, width: 1)
                 .padding()
 
-            Button("Save and Exit") {
-                let entry = JournalEntry(date: Date(), meditationTime: meditationTime, content: journalText)
-                onSave(entry)
-                // Code to exit the view
+            Spacer()
+
+            Button(action: {
+                viewModel.saveJournalEntry()
+                presentationMode.wrappedValue.dismiss()
+            }) {
+                Text("Save and Exit")
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(10)
             }
             .padding()
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(10)
         }
+        .navigationBarTitle("Journal", displayMode: .inline)
         .padding()
-        .navigationTitle("Journal")
     }
 }
 
 struct JournalView_Previews: PreviewProvider {
     static var previews: some View {
-        JournalView(meditationTime: 300, onSave: { _ in })
+        JournalView(viewModel: JournalViewViewModel(meditationTime: 300)) // Example meditation time
     }
 }
-
-struct JournalEntry {
-    let date: Date
-    let meditationTime: Int
-    let content: String
-}
-
